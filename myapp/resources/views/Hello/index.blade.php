@@ -7,7 +7,6 @@
     <title>aaaaaa</title>
 </head>
 <body>
-    @section('content')
      <table>
         <tr><th>id</th><th>Name</th><th>birthday</th><th>birthplace</th></tr>
         @foreach ($items as $item)
@@ -17,6 +16,7 @@
                 <td>{{$item -> birthday}}</td>
                 <td>{{$item -> birthplace}}</td>
             </tr>
+        @endforeach
      </table>
 </body>
 </html>

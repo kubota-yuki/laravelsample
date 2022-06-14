@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('hello','App\Http\Controllers\HelloController@index');
+Route::get('hello/show','App\Http\Controllers\HelloController@show');
 Route::get('hello/add','App\Http\Controllers\HelloController@add');
 Route::post('hello/add','App\Http\Controllers\HelloController@create');

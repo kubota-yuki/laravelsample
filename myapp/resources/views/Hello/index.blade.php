@@ -12,10 +12,10 @@
         <tr><th>Name</th><th>birthday</th><th>birthplace</th></tr>
         @foreach ($items as $item)
             <tr>
-                <td>{{$item -> }}</td>
-                <td>{{$item -> }}</td>
-                <td>{{$item -> }}</td>
-                
+                <td>{{$item -> title}}</td>
+                <td>{{$item -> title2}}</td>
+                <td>{{$item -> title3}}</td>
+                <td>{{$item -> title4}}</td>
             </tr>
      </table>
 </body>

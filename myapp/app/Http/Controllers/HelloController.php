@@ -38,4 +38,33 @@ class HelloController extends Controller
         DB::insert('insert into hinatatable(id, name,birthday,birthplace) values (:id, :name, :birthday, :birthplace)', $param);
         return redirect('/hello');
     }
+
+    public function edit(Request $request){
+        $param = ['id' => $request->id];
+        $item = DB::select('select * from hinatatable where id = :id');
+        return view('hello.edit',['from' => $item[0]]);
+    }
+
+    public function update(Request $request){
+        $param = [
+            'id' => $request->id,
+            'name' => $request->name,
+            'birthday' => $request->birthday,
+            'birthplace' => $request->birthplace
+        ];
+        DB::update('insert into hinatatable(id, name,birthday,birthplace) values (:id, :name, :birthday, :birthplace)', $param);
+        return redirect('/hello');
+    }
+
+
+    public function del(Request $request){
+        $param = ['id' => $request->id];
+        $item = DB::select('select * from hinatatable where id = :id');
+        return view('hello.edit',['from' => $item[0]]);
+    }
+    public function remove(Request $request){
+        $param = ['id' => $request->id];
+        $item = DB::delete('select * from hinatatable where id = :id', $param);
+        return redirect('/hello');
+    }
 }

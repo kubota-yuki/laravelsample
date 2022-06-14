@@ -2,10 +2,10 @@
  <from action="hello/add" method="post">
     <table>
         @csrf
-        <tr><th>title</th><td><input type= "text" name = "title"></td></tr>
-        <tr><th>title2</th><td><input type= "text" name = "title2"></td></tr>
-        <tr><th>title3</th><td><input type= "text" name = "title3"></td></tr>
-        <tr><th>title4</th><td><input type= "text" name = "title4"></td></tr>
+        <tr><th>id</th><td><input type= "text" name = "id"></td></tr>
+        <tr><th>name</th><td><input type= "text" name = "name"></td></tr>
+        <tr><th>birthday</th><td><input type= "text" name = "birthday"></td></tr>
+        <tr><th>birthplace</th><td><input type= "text" name = "birthplace"></td></tr>
     </table>
  </from>
  @endsection

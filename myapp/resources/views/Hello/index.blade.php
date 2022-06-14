@@ -9,13 +9,13 @@
 <body>
     @section('content')
      <table>
-        <tr><th>Name</th><th>birthday</th><th>birthplace</th></tr>
+        <tr><th>id</th><th>Name</th><th>birthday</th><th>birthplace</th></tr>
         @foreach ($items as $item)
             <tr>
-                <td>{{$item -> title}}</td>
-                <td>{{$item -> title2}}</td>
-                <td>{{$item -> title3}}</td>
-                <td>{{$item -> title4}}</td>
+                <td>{{$item -> id}}</td>
+                <td>{{$item -> name}}</td>
+                <td>{{$item -> birthday}}</td>
+                <td>{{$item -> birthplace}}</td>
             </tr>
      </table>
 </body>

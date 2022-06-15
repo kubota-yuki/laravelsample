@@ -1,4 +1,4 @@
-<from action="hello/edit" method="post">
+<form action="/hello/edit" method="post">
     <table>
         @csrf
         <tr><th>id</th><td><input type= "hidden" name = "id" value="{{$from->id}}"></td></tr>
@@ -7,4 +7,4 @@
         <tr><th>birthplace</th><td><input type= "text" name = "birthplace" value="{{$from->birthplace}}"></td></tr>
         <tr><th></th><td><input type="submit" value="send"></td></tr>
     </table>
- </from>
+ </form>

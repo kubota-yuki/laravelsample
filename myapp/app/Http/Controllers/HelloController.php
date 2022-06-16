@@ -52,7 +52,7 @@ class HelloController extends Controller
             'birthday' => $request->birthday,
             'birthplace' => $request->birthplace
         ];
-        DB::update('insert into hinatatable(id, name,birthday,birthplace) values (:id, :name, :birthday, :birthplace)', $param);
+        DB::update('update hinatatable set  name= :name, birthday= :birthday, birthplace =:birthplace where id =:id', $param);
         return redirect('/hello');
     }
 

@@ -8,7 +8,7 @@
 </head>
 <body>
      <table>
-        <tr><th>id</th><th>Name</th><th>birthday</th><th>birthplace</th><th>詳細</th><th>削除</th></tr>
+        <tr><th>id</th><th>Name</th><th>birthday</th><th>birthplace</th><th>詳細</th><th>編集</th><th>削除</th></tr>
         @foreach ($items as $item)
             <tr>
                 <td>{{$item -> id}}</td>
@@ -16,6 +16,7 @@
                 <td>{{$item -> birthday}}</td>
                 <td>{{$item -> birthplace}}</td>
                 <td> <a href="/hello/show?id={{$item->id}}">詳細</a></td>
+                <td> <a href="/hello/edit?id={{$item->id}}">編集</a></td>
                 <td> <a href="/hello/del?id={{$item->id}}">削除</a></td>
             </tr>
         @endforeach

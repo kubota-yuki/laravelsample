@@ -38,7 +38,7 @@
 
     </form>
 
-    <a href="/music/choice">次へ</a>
+    <a href="/music/check">次へ</a>
 
 </body>
 

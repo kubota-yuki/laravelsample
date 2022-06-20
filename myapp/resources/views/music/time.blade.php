@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>予約したい日にちを入力してください</h1>
-<input type="date"><br>
-<a href="/music/choose">次へ</a>
+    <h1>予約したい時間帯を入力してください</h1>
+    <a href ="/music/check">次へ</a>
 </body>
 </html>

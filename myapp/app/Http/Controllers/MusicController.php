@@ -45,5 +45,4 @@ class MusicController extends Controller
         $param = ['message' => 'メールアドレスとパスワードを入力してください。'];
         return view('music.loguin');
     }
-
 }

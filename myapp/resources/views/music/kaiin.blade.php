@@ -1,13 +1,13 @@
-@section('title','ユーザー認証')
+@section('title','会員登録ページ')
 
 @section('menuber')
    @parent
-   ユーザー認証ページ
+   会員登録ページ
 @endsection
 
 @section('content')
 <p>{{$message}}</p>
-    <from action="/music/loguin" method="post">
+    <from action="/music/kaiin" method="post">
     <table>
         @csrf
         <tr><th>mail: </th><td><input type="text"
@@ -23,6 +23,3 @@
 @section('footer')
 copyright 2020 tuyano.
 @endsection
-
-               
-               

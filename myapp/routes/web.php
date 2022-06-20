@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello','App\Http\Controllers\HelloController@index');
+/* Route::get('hello','App\Http\Controllers\HelloController@index');
 Route::get('hello/show','App\Http\Controllers\HelloController@show');
 Route::get('hello/add','App\Http\Controllers\HelloController@add');
 Route::post('hello/add','App\Http\Controllers\HelloController@create');
@@ -27,7 +27,7 @@ Route::get('hello/del','App\Http\Controllers\HelloController@del');
 Route::post('hello/del','App\Http\Controllers\HelloController@remove');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */
 
 Route::get('music','App\Http\Controllers\MusicController@date');
 Route::get('music/choose','App\Http\Controllers\MusicController@choose');

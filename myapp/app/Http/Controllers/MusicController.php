@@ -19,6 +19,7 @@ class MusicController extends Controller
     {
         return view('music.date');
     }
+    
 
     public function check(Request $request)
     {

@@ -1,5 +1,3 @@
-@extends('layouts.helloapp')
-
 @section('title','ユーザー認証')
 
 @section('menuber')

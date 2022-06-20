@@ -1,10 +1,8 @@
-@extends('layouts.helloapp')
-
-@section('title','ユーザー認証')
+@section('title','会員登録ページ')
 
 @section('menuber')
    @parent
-   ユーザー認証ページ
+   会員登録ページ
 @endsection
 
 @section('content')

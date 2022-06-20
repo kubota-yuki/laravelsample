@@ -40,4 +40,9 @@ class MusicController extends Controller
         return view('music.finish');
     }
 
+/*     public function getAuth(Request $request){
+        $param = ['message' => 'ログインして'];
+        return view('music.auth', $param);
+    } */
+
 }

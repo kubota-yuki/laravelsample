@@ -1,11 +1,5 @@
-@section('title','ユーザー認証')
 
-@section('menuber')
-   @parent
-   ユーザー認証ページ
-@endsection
 
-@section('content')
 <p>{{$message}}</p>
     <from action="/music/loguin" method="post">
     <table>
@@ -18,11 +12,7 @@
                value="send"></td></tr>
     </table>
     </form>
-@endsection
 
-@section('footer')
-copyright 2020 tuyano.
-@endsection
 
                
                

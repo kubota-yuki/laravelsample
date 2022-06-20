@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="/music/time" method="post">
     <h1>予約したい時間帯を入力してください</h1>
     <a href ="/music/check">次へ</a>
+    </form>
 </body>
 </html>

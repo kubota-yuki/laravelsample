@@ -19,6 +19,7 @@ class MusicController extends Controller
     {
         return view('music.date');
     }
+    
 
     public function check(Request $request)
     {
@@ -40,9 +41,15 @@ class MusicController extends Controller
         return view('music.finish');
     }
 
-/*     public function getAuth(Request $request){
-        $param = ['message' => 'ログインして'];
-        return view('music.auth', $param);
-    } */
+    public function login(Request $request)
+    {
+        $param = ['message' => 'メールアドレスとパスワードを入力してください。'];
+        return view('music.loguin',$param);
+    }
 
+    public function kaiin(Request $request)
+    {
+        $param = ['message' => 'メールアドレスとパスワードを登録してください。'];
+        return view('music.kaiin',$param);
+    }
 }

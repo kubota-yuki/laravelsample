@@ -40,4 +40,10 @@ class MusicController extends Controller
         return view('music.finish');
     }
 
+    public function login(Request $request)
+    {
+        $param = ['message' => 'メールアドレスとパスワードを入力してください。'];
+        return view('music.loguin');
+    }
+
 }

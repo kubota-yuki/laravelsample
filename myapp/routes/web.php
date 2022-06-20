@@ -34,3 +34,4 @@ Route::get('music/choose','App\Http\Controllers\MusicController@choose');
 Route::get('music/time','App\Http\Controllers\MusicController@time');
 Route::get('music/check','App\Http\Controllers\MusicController@check');
 Route::get('music/finish','App\Http\Controllers\MusicController@finish');
+Route::get('music/loguin','App\Http\Controllers\MusicController@login');

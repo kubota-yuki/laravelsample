@@ -43,6 +43,12 @@ class MusicController extends Controller
     public function login(Request $request)
     {
         $param = ['message' => 'メールアドレスとパスワードを入力してください。'];
-        return view('music.loguin');
+        return view('music.loguin',$param);
+    }
+
+    public function kaiin(Request $request)
+    {
+        $param = ['message' => 'メールアドレスとパスワードを登録してください。'];
+        return view('music.kaiin',$param);
     }
 }

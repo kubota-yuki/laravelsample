@@ -1,11 +1,3 @@
-@section('title','会員登録ページ')
-
-@section('menuber')
-   @parent
-   会員登録ページ
-@endsection
-
-@section('content')
 <p>{{$message}}</p>
     <from action="/music/kaiin" method="post">
     <table>
@@ -18,8 +10,3 @@
                value="send"></td></tr>
     </table>
     </form>
-@endsection
-
-@section('footer')
-copyright 2020 tuyano.
-@endsection

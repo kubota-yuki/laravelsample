@@ -52,4 +52,17 @@ class MusicController extends Controller
         $param = ['message' => 'メールアドレスとパスワードを登録してください。'];
         return view('music.kaiin',$param);
     }
+
+    protected function create(array $data)
+    {
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
+        return redirect('/music');
+    }
+
+
+
 }

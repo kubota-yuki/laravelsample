@@ -10,12 +10,16 @@
 <body>
     <table>
         @csrf
+        <tr><th>予約日</th><th>スタジオ</th><th>時間帯</th><th>詳細</th></tr>
         @foreach ($items as $item)
         <input type ="hidden" name="id" value="{{$item->id}}">
-        <tr><th>予約日</th><th>{{$item->date}}</th></tr>
-        <tr><th>スタジオ</th><th>{{$item->place}}</th></tr>
-        <tr><th>時間帯</th><th>{{$item->time}}</th></tr>
+        
+        <tr><td>{{$item->date}}</td><td>{{$item->place}}<td>{{$item->time}}</td><td><a href="/edit?={{$item->id}}">{{$item->id}}の詳細</a></td></tr>
+        
         @endforeach
     </table>
+
+    <a href="/">Top</a>
+
 </body>
 </html> 

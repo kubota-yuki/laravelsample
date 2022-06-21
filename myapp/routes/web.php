@@ -43,3 +43,4 @@ Route::post('music/kaiin','App\Http\Controllers\MusicController@create');
 Route::get('/','App\Http\Controllers\MusicController@main');
 Route::post('main','App\Http\Controllers\MusicController@newcreate');
 Route::get('show','App\Http\Controllers\MusicController@show'); 
+Route::get('edit','App\Http\Controllers\MusicController@edit'); 

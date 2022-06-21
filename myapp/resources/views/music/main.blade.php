@@ -26,5 +26,6 @@
         </p>
         <tr><th></th><td><input type="submit" value="次へ" ></td></tr>
     </form>
+    <a href="/show">予約詳細</a>
 </body>
 </html> 

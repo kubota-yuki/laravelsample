@@ -75,12 +75,18 @@ class MusicController extends Controller
             'time' => $request->time
         ];
         DB::insert('insert into touroku(id,date,place,time) values (:id,:date,:place,:time)', $param);
-        return redirect('/show');
+        return redirect('/');
     }
 
     public function show(Request $request){
         $items = DB::select('select * from touroku');
             return view('music.show',['items' => $items]);
+        } 
+    
+    public function edit(Request $request){
+        $id = $request->id;
+        $item = DB::table('touroku')->where('id', $id)->first();
+            return view('music.edit',['item' => $item]);            
         } 
 
 }

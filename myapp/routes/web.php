@@ -40,4 +40,6 @@ Route::get('music/loguin','App\Http\Controllers\MusicController@login');
 Route::get('music/kaiin','App\Http\Controllers\MusicController@kaiin');
 Route::post('music/kaiin','App\Http\Controllers\MusicController@create');
 
-
+Route::get('main','App\Http\Controllers\MusicController@main');
+Route::post('main','App\Http\Controllers\MusicController@create');
+Route::get('show','App\Http\Controllers\MusicController@show'); 

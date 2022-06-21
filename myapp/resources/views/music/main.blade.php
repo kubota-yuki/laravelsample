@@ -14,6 +14,7 @@
     @endif
     <form action="{{url('/main')}}" method="post" enctype="multipart/form-data">
         @csrf
+        <label>会員IDを入力してください：<input type="text" name="id"></label>
         <input type="date" name ="date" value="" ><br>
         <p>使用するスタジオ<br>
         <input type="radio" name ="place" value="1" >1<br>
@@ -23,7 +24,7 @@
         <p> 予約時間<br>
         <input type="time" name ="time" min="09:00" max="22:30" step="1800" value=""><br>
         </p>
-        <tr><th></th><td><i type="submit" ></td></tr>
+        <tr><th></th><td><input type="submit" value="次へ" ></td></tr>
     </form>
 </body>
 </html> 

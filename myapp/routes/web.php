@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 /* Route::get('hello','App\Http\Controllers\HelloController@index');
 Route::get('hello/show','App\Http\Controllers\HelloController@show');
@@ -40,6 +40,8 @@ Route::get('music/loguin','App\Http\Controllers\MusicController@login');
 Route::get('music/kaiin','App\Http\Controllers\MusicController@kaiin');
 Route::post('music/kaiin','App\Http\Controllers\MusicController@create');
 
-Route::get('main','App\Http\Controllers\MusicController@main');
-Route::post('main','App\Http\Controllers\MusicController@create');
-Route::get('show','App\Http\Controllers\MusicController@show'); 
+Route::get('/','App\Http\Controllers\MusicController@main');
+Route::post('main','App\Http\Controllers\MusicController@newcreate');
+Route::post('show','App\Http\Controllers\MusicController@show'); 
+Route::get('idcheck','App\Http\Controllers\MusicController@idcheck'); 
+

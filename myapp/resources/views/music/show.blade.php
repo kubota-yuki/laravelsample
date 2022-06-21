@@ -11,9 +11,10 @@
     <table>
         @csrf
         @foreach ($items as $item)
-        <tr><th>date</th><th>{{$item->date}}</th></tr>
-        <tr><th>place</th><th>{{$item->place}}</th></tr>
-        <tr><th>time</th><th>{{$item->time}}</th></tr>
+        <input type ="hidden" name="id" value="{{$item->id}}">
+        <tr><th>予約日</th><th>{{$item->date}}</th></tr>
+        <tr><th>スタジオ</th><th>{{$item->place}}</th></tr>
+        <tr><th>時間帯</th><th>{{$item->time}}</th></tr>
         @endforeach
     </table>
 </body>
